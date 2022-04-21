@@ -1,0 +1,86 @@
+Model Name: 
+Layer Type: FC
+Layer Number: 0
+Total number of Multiplier Switches: 128
+Total number of Mapping Strategies: 1
+
+==================================================================
+Mapping Strategy 0: 
+Tile Size: <T_X = 5, T_Y = 5, T_C = 2, T_K = 2, T_N = 1, T_X' = 1, T_Y' = 1>
+Average utilization rate: 0.78125
+
+-------------------------------------------------------------------
+Configuration 0
+
+Mapping: - Size of Virtual Neuron (VN): 50
+- Number of VNs: 2
+- Number of Idle Multiplier Switches: 28
+
+Distribute Network: 
+- Number of unicast in weights: (100) 
+- Number of multicast in weights: (0) 
+- Size of multicast in weights: (0) 
+- Number of unicast in inputs: (50) (10) 
+- Number of multicast in inputs: (50) 
+- Size of unicast in inputs: (2) 
+- Number of access between distribute switches: 34300
+
+Reduce Network: 
+- Number of reduce operations: 225792
+- Number of access between reduce switches: 465408
+
+Multiplier Network: 
+- Number of multiplications: 230400
+- Number of register access of the multiplier switch: 280320
+- Number of forward access between multiplier switches: 180480
+
+Virtual Neuron Address Table (VNAT): 
+- Number of outputs expected (single control step): 2
+
+On-chip Scratchpad memory (Prefetch buffer): 
+- Number of weights read: 100
+- Number of inputs read: 24960
+- Number of outputs write: 4608
+- Number of input data streams: 2304
+- Number of weight data streams: 1
+
+Performance: 
+- Number of control steps: 2304
+- Runtime cycles: 2306
+- Peak utilization rate in configuration 0 is: 0.78125
+- Average utilization rate in configuration 0 is: 0.78125
+
+Code Size: 
+- Code size is: 72
+
+-------------------------------------------------------------------
+Total Configurations: 
+
+Mapping: Distribute Network: 
+- Number of access between distribute switches: 34300
+
+Reduce Network: 
+- Number of reduce operations: 225792
+- Number of access between reduce switches: 465408
+
+Multiplier Network: 
+- Number of multiplications: 230400
+- Number of register access of the multiplier switch: 280320
+- Number of forward access between multiplier switches: 180480
+
+Virtual Neuron Address Table (VNAT): 
+On-chip Scratchpad memory (Prefetch buffer): 
+- Number of weights read: 100
+- Number of inputs read: 24960
+- Number of outputs write: 4608
+- Number of input data streams: 2304
+- Number of weight data streams: 1
+
+Performance: 
+- Number of control steps: 2304
+- Runtime cycles: 2306
+Code Size: 
+- Code size is: 72
+
+- Average utilization rate throughout the whole layer: 0.78125
+
